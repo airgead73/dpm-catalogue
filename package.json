@@ -4,7 +4,8 @@
   "description": "fullstack application using node, express, mongodb, auth0, and gulp.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "server": "NODE_ENV=development nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,11 @@
     "url": "https://github.com/airgead73/dpm-library/issues"
   },
   "homepage": "https://github.com/airgead73/dpm-library#readme",
+  "browserslist": [
+    ">1%",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "dependencies": {
     "cloudinary": "^1.29.0",
     "cookie-parser": "^1.4.6",
@@ -37,5 +43,9 @@
     "memorystore": "^1.6.7",
     "mongoose": "^6.3.0",
     "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
   }
 }
