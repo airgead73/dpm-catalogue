@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "NODE_ENV=development nodemon -r dotenv/config index.js"
+    "server": "NODE_ENV=development nodemon -r dotenv/config index.js",
+    "deploy": "git push heroku main",
+    "logs": "heroku logs --tail"
   },
   "repository": {
     "type": "git",
