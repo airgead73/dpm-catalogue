@@ -1,7 +1,3 @@
-const scss = require('./scss');
-const clean = require('./clean');
+const watchTasks = require('./watch');
 
-module.exports = {
-  scss,
-  clean
-}
+module.exports = watchTasks;

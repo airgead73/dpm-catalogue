@@ -1,12 +1,3 @@
-const { series, watch } = require('gulp');
-const { scss, clean } = require('./development');
-
-function watchTasks() {
-  watch('assets/scss/**/*.scss', { ignoreInitial: false, delay: 500 },
-  series(
-    clean,
-    scss
-  ));
-}
+const watchTasks = require('./development')
 
 exports.dev = watchTasks;
