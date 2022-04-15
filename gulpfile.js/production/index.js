@@ -1,7 +1,5 @@
+const { series } = require('gulp');
 const scss = require('./scss');
 const clean = require('./clean');
 
-module.exports = {
-  scss,
-  clean
-}
+exports.build = series(clean, scss)

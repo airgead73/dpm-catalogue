@@ -1,3 +1,5 @@
-const watchTasks = require('./development')
+const { dev } = require('./development');
+const { build } = require('./production');
 
-exports.dev = watchTasks;
+exports.dev = dev;
+exports.default = build;

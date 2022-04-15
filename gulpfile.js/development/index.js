@@ -1,3 +1,3 @@
 const watchTasks = require('./watch');
 
-module.exports = watchTasks;
+exports.dev = watchTasks;

@@ -10,7 +10,7 @@ function scss() {
     .pipe(sass())
     .pipe(postcss([autoprefixer])) 
     .pipe(cssnano())
-    .pipe(rename('main.css'))
+    .pipe(rename('main.min.css'))
     .pipe(dest('app/public', { sourcemaps: '.'}))
 }
 
