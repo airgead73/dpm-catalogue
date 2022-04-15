@@ -1,9 +1,10 @@
-// sticky footer
+@use './variables' as *;
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: $system;
 }
 
 .header, .footer {
@@ -16,4 +17,57 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
+  padding: 0 $outer-padding;
+  &__title {
+    text-align: center;
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $outer-padding;
+  background-color: $black;
+  color: $white;
+}
+
+.nav {
+  
+  &__list {
+    display: flex;
+    flex-direction: row;
+ 
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $black;
+  }
+  &__link {
+    display: block;
+    border: 1px solid black;
+    color: inherit;
+    font-weight: 300;
+    padding-bottom: 3px;
+    margin-left: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition-property: border-color;
+    transition-duration: .26s;
+    &:hover {
+      border-bottom-color: $white;
+    }
+  }
+}
+
+.footer {
+  padding: 0 $outer-padding;
+  &__credit {
+    text-align: center;
+    font-size: .75rem;
+  }
 }
