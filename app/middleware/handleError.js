@@ -21,8 +21,8 @@ const handleError = (err, req, res, next) => {
         success: false,
         status: statusCode,
         message: err.message,
-        main: 'main--error',
-        auth_nav: false
+        title: 'Error',
+        main: 'main--error'
       })
   } else {
     return res

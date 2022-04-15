@@ -55,7 +55,9 @@ app.set('view engine', 'ejs');
  * routes
  */
 app.get('/', (req, res, next) => {
-  res.send('app is running')
+  res.status(200).render('pages/home', {
+    title: 'DPM Catalogue'
+  });
 })
 
 /**
