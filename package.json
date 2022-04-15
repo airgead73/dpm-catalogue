@@ -6,8 +6,12 @@
   "scripts": {
     "start": "node index.js",
     "server": "NODE_ENV=development nodemon -r dotenv/config index.js",
+    "public": "gulp dev",
+    "watch": "concurrently \"npm:public\" \"npm:server \"",
+    "build": "gulp",
+    "heroku-postbuild": "echo Skip builds on Heroku",
     "deploy": "git push heroku main",
-    "logs": "heroku logs --tail"
+    "log": "heroku logs --tail"
   },
   "repository": {
     "type": "git",
