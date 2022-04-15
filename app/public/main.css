@@ -1,0 +1,16 @@
+header {
+  display: block;
+  background-color: white;
+}
+header h1 {
+  color: violet;
+  background-color: indianred;
+}
+header nav {
+  background-color: white;
+}
+
+main {
+  background-color: orange;
+}
+/*# sourceMappingURL=main.css.map */
