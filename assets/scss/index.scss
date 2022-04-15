@@ -1,16 +1,1 @@
-$color: violet;
-$color-2: indianred;
-
-header {
-  display: block;
-  background-color: white;
-  h1 {
-    color: $color;
-    background-color: $color-2;
-  }
-  nav {
-    background-color: white;
-  }
-}
-
 @import './modules/custom';
