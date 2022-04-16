@@ -65,4 +65,27 @@ body {
   text-align: center;
   font-size: 0.75rem;
 }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #333333;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333333;
+  border: 1px solid #333333;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 10px 0;
+}
+
+.tbody--striped tr:nth-child(even) {
+  background-color: #cccccc;
+}
 /*# sourceMappingURL=main.css.map */
