@@ -95,3 +95,21 @@ th {
   background-color: $lightgray;
 }
 
+// forms
+
+.form {
+  border: 2px solid $lightgray;
+  &__fieldset {
+    &--inputs {}
+    &--btns {}
+  }
+  &__title {}
+  &__control {}
+}
+
+.input {
+  &--text {}
+  &--textarea {}
+  &__title {}
+}
+

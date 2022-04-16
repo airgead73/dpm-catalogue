@@ -27,56 +27,37 @@
     </nav>
   </header>
   <main class="main">
-    <h2 class="main__title">works</h2>
-    <table class="table">
-      <thead class="thead">
-        <tr>
-          <th>title</th>
-          <th>mode</th>
-          <th>material</th>
-          <th>category</th>
-          <th colspan="3">description</th>
-        </tr>
-      </thead>
-      <tbody class="tbody tbody--striped">
-        <tr>
-          <td>Railroad Men</td>
-          <td>sculpture</td>
-          <td>bronze</td>
-          <td>figure</td>
-          <td>Three men hammer nails on railroad tracks.</td>
-          <td><a href="">update</a></td>
-          <td><a href="">delete</a></td>
-        </tr>
-        <tr>
-          <td>Carmel Valley</td>
-          <td>oil on canvas</td>
-          <td>oil on canvas</td>
-          <td>landscape</td>
-          <td>Field in Central California.</td>
-          <td><a href="">update</a></td>
-          <td><a href="">delete</a></td>
-        </tr>
-        <tr>
-          <td>Frostbiting</td>
-          <td>painting</td>
-          <td>oil on canvas</td>
-          <td>landscape</td>
-          <td>Small sailboat on Connecticut River in winter.</td>
-          <td><a href="">update</a></td>
-          <td><a href="">delete</a></td>
-        </tr>
-        <tr>
-          <td>Climber</td>
-          <td>sculpture</td>
-          <td>bronze</td>
-          <td>figure</td>
-          <td>Female climber ascends.</td>
-          <td><a href="">update</a></td>
-          <td><a href="">delete</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <h2 class="main__title">add work</h2>
+    <form action="" class="form" id="formWork">
+      <fieldset class="form__fieldset fieldset--inputs">
+        <legend class="form__title">add work</legend>
+        <label for="" class="form__control">
+          <span class="input__title">title</span>
+          <input class="input input--text" type="text" name="title" id="title">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">mode</span>
+          <input class="input input--text" type="text" name="mode" id="mode">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">material</span>
+          <input class="input input--text" type="text" name="material" id="material">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">category</span>
+          <input class="input input--text" type="text" name="category" id="category">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">description</span>
+          <textarea class="input input--textarea" name="desc" id="desc"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset--btns">
+        <button class="btn btn--form" type="submit" for="formWork">submit</button>
+        <button class="btn btn--form" type="reset" for="formWork">reset</button>
+      </fieldset>
+    </form>
+
   </main>
   <footer class="footer">
     <p class="footer__credit">&copy; 2022</p>

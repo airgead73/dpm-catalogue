@@ -88,4 +88,8 @@ th {
 .tbody--striped tr:nth-child(even) {
   background-color: #cccccc;
 }
+
+.form {
+  border: 2px solid #cccccc;
+}
 /*# sourceMappingURL=main.css.map */
