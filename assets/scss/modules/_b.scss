@@ -1,0 +1,209 @@
+@use './variables' as *;
+
+// https://www.taniarascia.com/easiest-flex-grid-ever/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $system;
+}
+
+.header, .footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $outer-padding;
+  &__title {
+    text-align: center;
+  }
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $outer-padding;
+  background-color: $black;
+  color: $white;
+}
+
+.nav {
+  
+  &__list {
+    display: flex;
+    flex-direction: row;
+ 
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: $black;
+  }
+  &__link {
+    display: block;
+    border: 1px solid black;
+    color: inherit;
+    font-weight: 300;
+    padding-bottom: 3px;
+    margin-left: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition-property: border-color;
+    transition-duration: .26s;
+    &:hover {
+      border-bottom-color: $white;
+    }
+  }
+}
+
+.footer {
+  padding: 0 $outer-padding;
+  &__credit {
+    text-align: center;
+    font-size: .75rem;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid $black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: $black;
+  border: 1px solid $black;
+  text-align: center;
+  color: $white;
+  padding: 10px 0;
+}
+
+.tbody--striped tr:nth-child(even) {
+  background-color: $lightgray;
+}
+
+// forms
+
+.form {
+  border: 2px solid $gray;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: $radius;
+  &__fieldset {
+    // border: 1px solid $lightgray;
+    border: none;
+    background-color: $lightgray;
+    margin-bottom: 20px;
+    padding: 30px 30px 10px 30px;
+    border-radius: $radius;
+    & legend {
+      padding: 0 10px;
+      background-color: $darkgray;
+      color: $white;
+      border-radius: $radius;
+    }
+    &--inputs {}
+    &.fieldset--btns {
+      padding: 30px;
+    }
+  }
+  &__title {
+    width: 100%;
+    background-color: $darkgray;
+    padding: 8px;
+    margin: 0;
+    color: $white;
+    border-radius: $radius;
+  }
+  &__control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  line-height: 2.5;
+  padding: 0 8px;
+  border-color: $lightgray;
+  border-style: solid;
+  border-width: .5px;
+  border-radius: $radius;
+  &--text {
+    &:focus {
+      outline-color: $darkgray;
+      background-color: $darkgray;
+      color: $white;
+    }
+  }
+  &--textarea {
+    border-color: $lightgray;
+    &:focus {
+      outline-color: $darkgray;
+      background-color: $darkgray;
+      color: $white;
+    }    
+  }
+  &__title {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    margin-bottom: 3px;
+  }
+}
+
+.btn {
+  background-color: $lightgray;
+  border: none;
+  border-radius: $radius;
+  padding: 10px 12px;
+  transition-duration: .2s;
+  &:hover {
+    cursor: pointer;
+    background-color: $darkgray;
+    color: $white;
+  }
+  &:focus {
+    outline-color: $gray;
+  }
+}
+
+// grid
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
+
