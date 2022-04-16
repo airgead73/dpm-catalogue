@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script src="/bundle.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Sandbox</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">works</a></li>
+        <li class="nav__item"><a class="nav__link" href="">photos</a></li>
+        <li class="nav__item"><a class="nav__link" href="">logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <form action="" class="form" id="formWork">
+      <fieldset class="form__fieldset fieldset--inputs">
+        <legend>
+          <h2 class="form__title">add work</h2>
+        </legend>
+        <label for="" class="form__control">
+          <span class="input__title">title</span>
+          <input class="input input--text" type="text" name="title" id="title">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">mode</span>
+          <input class="input input--text" type="text" name="mode" id="mode">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">material</span>
+          <input class="input input--text" type="text" name="material" id="material">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">category</span>
+          <input class="input input--text" type="text" name="category" id="category">
+        </label>
+        <label for="" class="form__control">
+          <span class="input__title">description</span>
+          <textarea class="input input--textarea" name="desc" id="desc"></textarea>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset--btns">
+        <button class="btn btn--form" type="submit" for="formWork">submit</button>
+        <button class="btn btn--form" type="reset" for="formWork">reset</button>
+      </fieldset>
+    </form>
+
+  </main>
+  <footer class="footer">
+    <p class="footer__credit">&copy; 2022</p>
+  </footer>
+</body>
+
+</html>

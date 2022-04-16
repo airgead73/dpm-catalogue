@@ -19,6 +19,9 @@ body {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 $outer-padding;
   &__title {
     text-align: center;
@@ -182,6 +185,25 @@ th {
   }
   &:focus {
     outline-color: $gray;
+  }
+}
+
+// grid
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
   }
 }
 
