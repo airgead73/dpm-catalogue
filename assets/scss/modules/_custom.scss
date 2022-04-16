@@ -98,18 +98,53 @@ th {
 // forms
 
 .form {
-  border: 2px solid $lightgray;
+  border: 2px solid $gray;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: $radius;
   &__fieldset {
+    border: 1px solid $lightgray;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: $radius;
+    & legend {
+      padding: 0 25px;
+    }
     &--inputs {}
-    &--btns {}
+    &.fieldset--btns {
+      padding: 30px;
+    }
   }
-  &__title {}
-  &__control {}
+  &__title {
+    width: 100%;
+  }
+  &__control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 .input {
-  &--text {}
-  &--textarea {}
-  &__title {}
+  display: block;
+  width: 100%;
+  line-height: 2.5;
+  padding: 0 5px;
+  border-color: $lightgray;
+  border-style: solid;
+  border-width: .5px;
+  border-radius: $radius;
+  &--text {
+
+  }
+  &--textarea {
+    border-color: $lightgray;
+  }
+  &__title {
+    display: block;
+    width: 100%;
+    font-size: .8rem;
+    margin-bottom: 3px;
+  }
 }
 
