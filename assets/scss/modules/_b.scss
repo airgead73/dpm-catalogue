@@ -1,4 +1,12 @@
 @use './variables' as *;
 
 // https://www.taniarascia.com/easiest-flex-grid-ever/
+// https://responsivedesign.is/develop/getting-started-with-sass-and-breakpoint-mixin/
+// https://www.easeout.co/blog/2020-08-27-setup-media-queries-with-sass-mixins/
 
+.wrapper {
+  max-width: 480px;
+  @include breakpoint(laptop) {
+    max-width: 960px;
+  }
+}
